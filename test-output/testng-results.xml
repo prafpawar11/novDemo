@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-12-08T04:31:14Z" name="Test Wiki and IMDB Pusha functionality" finished-at="2022-12-08T04:31:44Z" duration-ms="29533">
+    <groups>
+      <group name="imdb">
+        <method signature="GoogleSearchPageTest.verifyGoogleSearchPageTitle()[pri:1, instance:com.TestLayer.GoogleSearchPageTest@21337f7b]" name="verifyGoogleSearchPageTitle" class="com.TestLayer.GoogleSearchPageTest"/>
+        <method signature="ImdbPageTest.captureCountry()[pri:4, instance:com.TestLayer.ImdbPageTest@7a362b6b]" name="captureCountry" class="com.TestLayer.ImdbPageTest"/>
+        <method signature="ImdbPageTest.captureReleaseDate()[pri:5, instance:com.TestLayer.ImdbPageTest@7a362b6b]" name="captureReleaseDate" class="com.TestLayer.ImdbPageTest"/>
+        <method signature="ImdbPageTest.clickonImdb()[pri:3, instance:com.TestLayer.ImdbPageTest@7a362b6b]" name="clickonImdb" class="com.TestLayer.ImdbPageTest"/>
+      </group> <!-- imdb -->
+      <group name="wiki">
+        <method signature="GoogleSearchPageTest.clickonWiki()[pri:2, instance:com.TestLayer.GoogleSearchPageTest@21337f7b]" name="clickonWiki" class="com.TestLayer.GoogleSearchPageTest"/>
+        <method signature="GoogleSearchPageTest.verifyGoogleSearchPageTitle()[pri:1, instance:com.TestLayer.GoogleSearchPageTest@21337f7b]" name="verifyGoogleSearchPageTitle" class="com.TestLayer.GoogleSearchPageTest"/>
+        <method signature="WikipediaPageTest.captureCountry()[pri:3, instance:com.TestLayer.WikipediaPageTest@2bb3058]" name="captureCountry" class="com.TestLayer.WikipediaPageTest"/>
+        <method signature="WikipediaPageTest.captureReleaseDate()[pri:4, instance:com.TestLayer.WikipediaPageTest@2bb3058]" name="captureReleaseDate" class="com.TestLayer.WikipediaPageTest"/>
+      </group> <!-- wiki -->
+      <group name="google">
+        <method signature="GooglePageTest.searchOnGoogle()[pri:0, instance:com.TestLayer.GooglePageTest@73cd37c0]" name="searchOnGoogle" class="com.TestLayer.GooglePageTest"/>
+      </group> <!-- google -->
+      <group name="validation">
+        <method signature="ValidationWIkiAndImdb.validateCountry()[pri:10, instance:com.TestLayer.ValidationWIkiAndImdb@60df60da]" name="validateCountry" class="com.TestLayer.ValidationWIkiAndImdb"/>
+        <method signature="ValidationWIkiAndImdb.validateReleaseDate()[pri:11, instance:com.TestLayer.ValidationWIkiAndImdb@60df60da]" name="validateReleaseDate" class="com.TestLayer.ValidationWIkiAndImdb"/>
+      </group> <!-- validation -->
+    </groups>
+    <test started-at="2022-12-08T04:31:14Z" name="Test Pusha the Rise" finished-at="2022-12-08T04:31:44Z" duration-ms="29533">
+      <class name="com.TestLayer.ImdbPageTest">
+        <test-method signature="clickonImdb()[pri:3, instance:com.TestLayer.ImdbPageTest@7a362b6b]" started-at="2022-12-08T04:31:28Z" name="clickonImdb" finished-at="2022-12-08T04:31:30Z" duration-ms="2473" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickonImdb -->
+        <test-method signature="captureCountry()[pri:4, instance:com.TestLayer.ImdbPageTest@7a362b6b]" started-at="2022-12-08T04:31:39Z" name="captureCountry" finished-at="2022-12-08T04:31:39Z" duration-ms="84" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureCountry -->
+        <test-method signature="captureReleaseDate()[pri:5, instance:com.TestLayer.ImdbPageTest@7a362b6b]" started-at="2022-12-08T04:31:41Z" name="captureReleaseDate" finished-at="2022-12-08T04:31:41Z" duration-ms="85" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureReleaseDate -->
+      </class> <!-- com.TestLayer.ImdbPageTest -->
+      <class name="com.TestLayer.ValidationWIkiAndImdb">
+        <test-method signature="validateCountry()[pri:10, instance:com.TestLayer.ValidationWIkiAndImdb@60df60da]" started-at="2022-12-08T04:31:42Z" name="validateCountry" finished-at="2022-12-08T04:31:42Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCountry -->
+        <test-method signature="validateReleaseDate()[pri:11, instance:com.TestLayer.ValidationWIkiAndImdb@60df60da]" started-at="2022-12-08T04:31:42Z" name="validateReleaseDate" finished-at="2022-12-08T04:31:42Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateReleaseDate -->
+      </class> <!-- com.TestLayer.ValidationWIkiAndImdb -->
+      <class name="com.TestLayer.GoogleSearchPageTest">
+        <test-method signature="verifyGoogleSearchPageTitle()[pri:1, instance:com.TestLayer.GoogleSearchPageTest@21337f7b]" started-at="2022-12-08T04:31:24Z" name="verifyGoogleSearchPageTitle" depends-on-groups="google" finished-at="2022-12-08T04:31:24Z" duration-ms="10" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGoogleSearchPageTitle -->
+        <test-method signature="clickonWiki()[pri:2, instance:com.TestLayer.GoogleSearchPageTest@21337f7b]" started-at="2022-12-08T04:31:25Z" name="clickonWiki" depends-on-groups="google" finished-at="2022-12-08T04:31:25Z" duration-ms="137" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickonWiki -->
+      </class> <!-- com.TestLayer.GoogleSearchPageTest -->
+      <class name="com.TestLayer.GooglePageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.TestLayer.GooglePageTest@73cd37c0]" started-at="2022-12-08T04:31:14Z" name="setUp" finished-at="2022-12-08T04:31:19Z" duration-ms="4922" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="searchOnGoogle()[pri:0, instance:com.TestLayer.GooglePageTest@73cd37c0]" started-at="2022-12-08T04:31:19Z" name="searchOnGoogle" finished-at="2022-12-08T04:31:23Z" duration-ms="3755" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchOnGoogle -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.TestLayer.GooglePageTest@73cd37c0]" started-at="2022-12-08T04:31:43Z" name="tearDown" finished-at="2022-12-08T04:31:44Z" duration-ms="661" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.TestLayer.GooglePageTest -->
+      <class name="com.TestLayer.WikipediaPageTest">
+        <test-method signature="captureCountry()[pri:3, instance:com.TestLayer.WikipediaPageTest@2bb3058]" started-at="2022-12-08T04:31:27Z" name="captureCountry" finished-at="2022-12-08T04:31:27Z" duration-ms="64" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureCountry -->
+        <test-method signature="captureReleaseDate()[pri:4, instance:com.TestLayer.WikipediaPageTest@2bb3058]" started-at="2022-12-08T04:31:36Z" name="captureReleaseDate" finished-at="2022-12-08T04:31:36Z" duration-ms="233" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureReleaseDate -->
+      </class> <!-- com.TestLayer.WikipediaPageTest -->
+    </test> <!-- Test Pusha the Rise -->
+  </suite> <!-- Test Wiki and IMDB Pusha functionality -->
+</testng-results>
